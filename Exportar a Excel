@@ -1,0 +1,16 @@
+xlsx.writeMultipleData <- function (file, ...) 
+{
+  require(xlsx, quietly = TRUE)
+  objects <- list(...)
+  fargs <- as.list(match.call(expand.dots = TRUE))
+  objnames <- as.character(fargs)[-c(1, 2)]
+  nobjects <- length(objects)
+  for (i in 1:nobjects) {
+    if (i == 1)
+      write.xlsx(objects[[i]], file, sheetName = objnames[i])
+    else write.xlsx(objects[[i]], file, sheetName = objnames[i],
+                    append = TRUE)
+  }
+}
+setwd("~/Documents/CIEAP/IPL 2005 y 2015 ii-trim")
+xlsx.writeMultipleData("Libro1.xlsx",a,b,c,d,e,f,g,h,i,j,k)
