@@ -1,0 +1,8 @@
+#Para desplegar los valores de variables en R pueden ser de dos formas:
+
+#Forma 1
+x<-c(1,2,3,4) #Generamos un vector 
+x 
+
+#Forma 2
+(x<-c(1,2,3,4)) #Lo despliega automáticamente 
