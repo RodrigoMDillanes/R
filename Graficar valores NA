@@ -1,0 +1,3 @@
+require(Amelia)
+data("africa")
+missmap(africa) #Grafica los valores NA existente por variable
