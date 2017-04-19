@@ -1,0 +1,7 @@
+
+library(splitstackshape)
+matexpandida <- expandRows(dataset=mat, count="FAC") #mat es el data frame y FAC es el vector numerico e indica el numero de veces
+#que quieres repetir el renglon
+
+#Fuente: 
+#https://stackoverflow.com/questions/2894775/replicate-each-row-of-data-frame-and-specify-the-number-of-replications-for-each/30172723#30172723
