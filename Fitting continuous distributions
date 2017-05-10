@@ -1,0 +1,7 @@
+library(rriskDistributions)
+x.norm <- rnorm(n=100,mean=2,sd=5)
+fit<-fit.cont(x.norm) #Se abrirá una ventana y de acuerdo a las pruebas de los graficos y las pruebas elegir la distribucion
+#que mejor se ajuste a los datos
+fit$data2fit #Muestra los datos
+fit$chosenDistr #Muestra la distribucion escogida para ajustar los datos
+fit$fittedParams #Muestra los parametros dependiendo de la distribución elegida
