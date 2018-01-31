@@ -3,6 +3,6 @@
 substr(vector,inicio,fin)
 
 #usandose de la siguiente forma
-substr(sample(100;999,100),1,2) # En este ejemplo estamos extrayendo los dos primeros digitos de un vector de tamano
+substr(sample(100:999,100),1,2) # En este ejemplo estamos extrayendo los dos primeros digitos de un vector de tamano
 100 donde cáda valor es de 3 dígitos
 
